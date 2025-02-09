@@ -1,0 +1,7 @@
+data(iris)  
+print(dim(iris))  
+print(str(iris))  
+print(summary(iris))  
+print(apply(iris[,1:4], 2, sd))  
+print(aggregate(. ~ Species, data = iris, mean))  
+print(quantile(iris$Sepal.Width))
